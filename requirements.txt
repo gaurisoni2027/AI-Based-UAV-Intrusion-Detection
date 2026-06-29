@@ -1,0 +1,35 @@
+# Core Libraries
+numpy
+pandas
+scipy
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Machine Learning
+scikit-learn
+xgboost
+imbalanced-learn
+
+# Deep Learning
+tensorflow
+keras
+
+# Explainability
+shap
+
+# Hyperparameter Tuning
+optuna
+
+# Notebook Environment
+jupyter
+ipykernel
+notebook
+
+# Model Saving
+joblib
+
+# Utilities
+tqdm
