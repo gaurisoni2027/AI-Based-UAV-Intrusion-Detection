@@ -25,3 +25,11 @@ Thumbs.db
 *.joblib
 *.h5
 *.keras
+
+
+# Trained Models
+models/
+*.pth
+*.pt
+*.pkl
+*.joblib
