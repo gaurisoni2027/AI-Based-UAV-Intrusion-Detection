@@ -33,3 +33,6 @@ models/
 *.pt
 *.pkl
 *.joblib
+
+catboost_info/
+**/catboost_info/
