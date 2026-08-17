@@ -39,15 +39,15 @@ The deployed Streamlit application allows users to upload a UAV communication da
 
 ### Dashboard Overview
 
-![Dashboard](screenshots/overview.png)
+![Dashboard](./screenshots/overview.png)
 
 ### Prediction Results
 
-![Prediction Results](screenshots/results.png)
+![Prediction Results](./screenshots/results.png)
 
 ### Security Assessment
 
-![Security Assessment](screenshots/analysis.png)
+![Security Assessment](./screenshots/analysis.png)
 
 ---
 
