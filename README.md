@@ -35,19 +35,17 @@ This project develops an **AI-based Intrusion Detection System (IDS)** capable o
 
 ## Live Application
 
-The deployed Streamlit application allows users to upload a UAV communication dataset and receive real-time attack predictions through an interactive dashboard.
+The project is deployed on **Streamlit Cloud**, allowing users to upload a UAV communication dataset and receive real-time intrusion detection results through an interactive dashboard.
 
-### Dashboard Overview
+### Application Features
 
-<img src="https://raw.githubusercontent.com/gaurisoni2027/AI-Based-UAV-Intrusion-Detection/main/screenshots/overview.png" width="900">
+- Upload UAV communication datasets in CSV format.
+- Detect Benign, DoS, and Replay traffic.
+- View packet-wise predictions with confidence scores.
+- Monitor attack distribution and threat level through an interactive dashboard.
+- Generate a real-time security assessment based on detected attacks.
 
-### Prediction Results
-
-<img src="https://raw.githubusercontent.com/gaurisoni2027/AI-Based-UAV-Intrusion-Detection/main/screenshots/results.png" width="900">
-
-### Security Assessment
-
-<img src="https://raw.githubusercontent.com/gaurisoni2027/AI-Based-UAV-Intrusion-Detection/main/screenshots/analysis.png" width="900">
+**Live Demo:** https://ai-based-uav-intrusion-detection.streamlit.app/
 
 ---
 
@@ -127,3 +125,125 @@ Streamlit Cloud Deployment
             │
             ▼
 AI-Based UAV Intrusion Detection System
+```
+
+---
+
+## Project Structure
+
+```text
+AI-Based-UAV-Intrusion-Detection/
+│
+├── app/
+│   ├── app.py
+│   └── predict.py
+│
+├── data/
+│   ├── raw/
+│   ├── interim/
+│   └── processed/
+│
+├── models/
+│   ├── xgboost_final.pkl
+│   └── best_lstm_model.pth
+│
+├── notebooks/
+│   ├── 01_dataset_understanding.ipynb
+│   ├── 02_dataset_creation.ipynb
+│   ├── 03_eda.ipynb
+│   ├── 04_preprocessing.ipynb
+│   ├── 05_baseline_ml_models.ipynb
+│   ├── 06_deep_learning_models.ipynb
+│   ├── 07_xgboost_hyperparameter_tuning.ipynb
+│   ├── 08_catboost_classifier.ipynb
+│   ├── 09_dataset_analysis.ipynb
+│   └── 10_feature_selection.ipynb
+│
+├── sample_data/
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## Model Development
+
+Multiple Machine Learning and Deep Learning models were implemented to evaluate their effectiveness for UAV intrusion detection.
+
+**Models Implemented**
+
+- Logistic Regression – Baseline classifier.
+- Random Forest – Ensemble learning baseline.
+- CatBoost – Gradient boosting comparison.
+- XGBoost – Hyperparameter-optimized model.
+- MLP – Deep learning comparison.
+- LSTM – Sequential deep learning model.
+
+After comparative evaluation, the optimized **XGBoost** model was selected as the final deployment model due to its superior performance on the processed UAV network dataset.
+
+---
+
+## Model Performance
+
+| Model | Accuracy |
+|--------|---------:|
+| Logistic Regression | 63.71% |
+| Random Forest | 72.18% |
+| **XGBoost** | **75.65%** |
+| MLP | 66.88% |
+| LSTM | 67.81% |
+
+The optimized **XGBoost** model achieved the highest overall performance and was deployed in the Streamlit application.
+
+---
+
+## Technologies Used
+
+**Programming**
+
+- Python
+
+**Machine Learning**
+
+- XGBoost
+- Scikit-learn
+- CatBoost
+- PyTorch
+
+**Data Processing**
+
+- Pandas
+- NumPy
+
+**Visualization**
+
+- Matplotlib
+
+**Deployment**
+
+- Streamlit Cloud
+- Joblib
+
+---
+
+## Future Improvements
+
+- Extend deployment to support Evil Twin and False Data Injection attacks.
+- Improve multiclass detection performance through advanced feature engineering.
+- Add explainable AI visualizations.
+- Support live UAV network traffic monitoring.
+
+---
+
+## Internship
+
+This project was completed during my **Machine Learning Internship at DRDO (Defence Research and Development Organisation)** as part of research-oriented work on AI-driven cybersecurity for UAV communication networks.
+
+---
+
+## Author
+
+**Gauri Soni**
+
+- GitHub: https://github.com/gaurisoni2027
+- LinkedIn: https://www.linkedin.com/in/gaurisoni22/
