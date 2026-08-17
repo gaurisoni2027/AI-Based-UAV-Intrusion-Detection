@@ -1,10 +1,53 @@
 # AI-Based Intrusion Detection for UAV Communication Networks Using Machine Learning and Deep Learning
 
-## Project Description
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![XGBoost](https://img.shields.io/badge/XGBoost-ML-green)
+![Streamlit](https://img.shields.io/badge/Streamlit-Live-red)
+![Status](https://img.shields.io/badge/Status-Deployed-success)
 
-Modern Unmanned Aerial Vehicles (UAVs) are extensively used in defense applications such as border surveillance, reconnaissance, intelligence gathering, and real-time monitoring. As these UAVs continuously communicate with Ground Control Stations (GCS) over wireless networks, they become vulnerable to various cyber threats.
+An AI-powered Intrusion Detection System (IDS) developed during my **Machine Learning Internship at DRDO**, designed to detect malicious communication patterns in UAV networks using Machine Learning techniques and a real-world cybersecurity dataset.
 
-This project aims to develop an **Artificial Intelligence-based Intrusion Detection System (IDS)** capable of identifying malicious communication patterns in UAV networks using Machine Learning and Deep Learning techniques. The goal is to accurately distinguish normal UAV communication from cyber attacks using real-world network traffic data.
+## Live Demo
+
+**Streamlit Application:** https://ai-based-uav-intrusion-detection.streamlit.app/
+
+---
+
+## Project Overview
+
+Modern **Unmanned Aerial Vehicles (UAVs)** play a critical role in defense applications such as border surveillance, reconnaissance, intelligence gathering, and real-time monitoring. Since UAVs continuously communicate with Ground Control Stations (GCS) over wireless networks, they are vulnerable to cyber attacks that can compromise communication reliability and mission safety.
+
+This project develops an **AI-based Intrusion Detection System (IDS)** capable of classifying UAV network traffic as either normal or malicious by learning patterns from real-world network communication data.
+
+---
+
+## Key Features
+
+- UAV network traffic intrusion detection using Machine Learning.
+- Detection of Benign, DoS, and Replay attacks.
+- Comprehensive data preprocessing and feature engineering pipeline.
+- Exploratory Data Analysis (EDA) of network traffic.
+- Comparison of Machine Learning and Deep Learning models.
+- Interactive Streamlit Cloud deployment.
+- CSV upload interface for real-time prediction.
+
+---
+
+## Live Application
+
+The deployed Streamlit application allows users to upload a UAV communication dataset and receive real-time attack predictions through an interactive dashboard.
+
+### Dashboard Overview
+
+![Dashboard](screenshots/overview.png)
+
+### Prediction Results
+
+![Prediction Results](screenshots/results.png)
+
+### Security Assessment
+
+![Security Assessment](screenshots/analysis.png)
 
 ---
 
@@ -14,39 +57,37 @@ This project aims to develop an **Artificial Intelligence-based Intrusion Detect
 
 The dataset contains network traffic collected from a real UAV cyber-physical testbed under both normal flight conditions and multiple cyber attack scenarios.
 
-For this project, the **Cyber (Network Communication) Dataset** is used to develop the intrusion detection system.
+This project primarily utilizes the **Cyber (Network Communication)** portion of the dataset.
 
----
+### Attack Categories
 
-## Attack Categories
-
-The original dataset contains the following attack scenarios:
+Original dataset:
 
 - Benign Communication
-- Deauthentication Denial-of-Service (DoS) Attack
+- Deauthentication DoS Attack
 - Replay Attack
 - Evil Twin Attack
-- False Data Injection (FDI) Attack
+- False Data Injection (FDI)
 
-The current implementation focuses on the processed network dataset containing:
+Current implementation:
 
 - Benign Traffic
 - DoS Attack
 - Replay Attack
 
-Support for Evil Twin and False Data Injection attacks can be incorporated as future extensions.
+The framework is designed to support additional attack categories as future extensions.
 
 ---
 
 ## Project Objectives
 
-- Understand and analyze the UAV cyber-physical dataset.
-- Prepare a clean network intrusion dataset for model development.
-- Perform comprehensive Exploratory Data Analysis (EDA).
-- Build baseline Machine Learning models.
-- Develop Deep Learning models for intrusion detection.
-- Compare the performance of different models using standard evaluation metrics.
-- Build a research-oriented intrusion detection pipeline suitable for defense cybersecurity applications.
+- Analyze the UAV cyber-physical dataset.
+- Create a clean network intrusion dataset.
+- Perform Exploratory Data Analysis.
+- Develop Machine Learning baseline models.
+- Compare Deep Learning and Machine Learning approaches.
+- Build a deployable intrusion detection application.
+- Demonstrate practical defense cybersecurity applications.
 
 ---
 
@@ -62,7 +103,7 @@ Dataset Understanding
 Network Dataset Creation
             │
             ▼
-Exploratory Data Analysis (EDA)
+Exploratory Data Analysis
             │
             ▼
 Data Preprocessing
@@ -76,10 +117,13 @@ Machine Learning Models
             │
             ▼
 Deep Learning Models
-(LSTM)
+(MLP, LSTM)
             │
             ▼
 Model Evaluation & Comparison
+            │
+            ▼
+Streamlit Cloud Deployment
             │
             ▼
 AI-Based UAV Intrusion Detection System
