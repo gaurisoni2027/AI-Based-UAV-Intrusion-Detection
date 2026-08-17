@@ -39,15 +39,15 @@ The deployed Streamlit application allows users to upload a UAV communication da
 
 ### Dashboard Overview
 
-![Dashboard](./screenshots/overview.png)
+<img src="https://raw.githubusercontent.com/gaurisoni2027/AI-Based-UAV-Intrusion-Detection/main/screenshots/overview.png" width="900">
 
 ### Prediction Results
 
-![Prediction Results](./screenshots/results.png)
+<img src="https://raw.githubusercontent.com/gaurisoni2027/AI-Based-UAV-Intrusion-Detection/main/screenshots/results.png" width="900">
 
 ### Security Assessment
 
-![Security Assessment](./screenshots/analysis.png)
+<img src="https://raw.githubusercontent.com/gaurisoni2027/AI-Based-UAV-Intrusion-Detection/main/screenshots/analysis.png" width="900">
 
 ---
 
